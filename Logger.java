@@ -24,8 +24,8 @@ public class Logger {
     public void logToConsole() {
         String message = "";
         message += hello + "\n";
-        message += "Instances: " + i + "\n";
-        message += "Wywolane: " + j + "\n";
+        message += "Logger instances: " + i + "\n";
+        message += "Logger called: " + j + "\n";
         message += "=== log end ===" + "\n";
         System.out.println(message);
     }
