@@ -6,11 +6,7 @@ public class Main {
     }
 
     private static void creationPatterns() {
-    /*Song piosenka1 = new SongBuilder().createSong()
-            .setArtist("Blur")
-            .setTitle("Song2")
-            .setLength(182);
-*/
+
         Song piosenka1 = new Song.SongBuilder()
                 .setArtist("Blur")
                 .setTitle("Song2")
