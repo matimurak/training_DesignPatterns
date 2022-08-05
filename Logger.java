@@ -7,15 +7,18 @@ public class Logger {
     private static int j = 0;
 
 
-    private Logger() {}
+    private Logger() { i++; }
 
     public static Logger getInstance() {
+        j++;
+        return SingletonHolder.INSTANCE;
+        /*
         if (Logger.instance == null) {
             instance = new Logger();
             i++;
         }
         j++;
-        return instance;
+        return instance;*/
     }
 
     public void logToConsole() {
@@ -23,5 +26,9 @@ public class Logger {
         System.out.println("Instances: " + i);
         System.out.println("Wywolane: " + j);
         System.out.println("=== log end ===");
+    }
+
+    private static class SingletonHolder {
+        private static final Logger INSTANCE = new Logger();
     }
 }
