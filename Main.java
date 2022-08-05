@@ -1,10 +1,15 @@
 public class Main {
     public static void main(String[] args) {
 
-        /*Song piosenka1 = new SongBuilder().createSong()
-                .setArtist("Blur")
-                .setTitle("Song2")
-                .setLength(182);
+        creationPatterns();
+
+    }
+
+    private static void creationPatterns() {
+    /*Song piosenka1 = new SongBuilder().createSong()
+            .setArtist("Blur")
+            .setTitle("Song2")
+            .setLength(182);
 */
         Song piosenka1 = new Song.SongBuilder()
                 .setArtist("Blur")
@@ -26,6 +31,5 @@ public class Main {
         Logger.getInstance().logToConsole();
         Logger.getInstance().logToConsole();
         Logger.getInstance().logToConsole();
-
     }
 }
