@@ -22,10 +22,12 @@ public class Logger {
     }
 
     public void logToConsole() {
-        System.out.println(Logger.hello);
-        System.out.println("Instances: " + i);
-        System.out.println("Wywolane: " + j);
-        System.out.println("=== log end ===");
+        String message = "";
+        message += hello + "\n";
+        message += "Instances: " + i + "\n";
+        message += "Wywolane: " + j + "\n";
+        message += "=== log end ===" + "\n";
+        System.out.println(message);
     }
 
     private static class SingletonHolder {
