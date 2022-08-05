@@ -11,7 +11,7 @@ public class Logger {
 
     public static Logger getInstance() {
         j++;
-        return SingletonHolder.INSTANCE;
+        return SingletonHolder.instance;
         /*
         if (Logger.instance == null) {
             instance = new Logger();
@@ -31,6 +31,6 @@ public class Logger {
     }
 
     private static class SingletonHolder {
-        private static final Logger INSTANCE = new Logger();
+        private static final Logger instance = new Logger();
     }
 }
